@@ -1,0 +1,43 @@
+
+            LAMBDA
+* Programming is divided into 2:
+    1. Structured Programming
+        It is necessary to do each step one by one.
+    2. Functional Programming --> Lambda
+        It's like putting Lego pieces together.
+        Works quickly and without errors.
+
+* Benefits of Lambda: We will not waste time typing code.
+    Challenges of typing code:
+        a. Difficulty setting up logic
+        b. Difficulty writing code
+        c. Challenge of writing code that works for every scenario
+
+* Features of Lambda:
+    1. "Functional Programming" deals with "What to do?" It is not interested in "How to do?"
+    2. "Functional Programming" is used in Collections and Arrays.
+    3. Lambda was added to Java in "Java 8."
+
+* Using the "(String::toUpperCase)" within the method parentheses in Lambda is called "Method Reference."
+
+* Codes can be written in Lambda in two ways.
+    1. Lambda Expression --> (t->t.charAt(t.length()-1))
+    2. Method Reference --> (String::toUpperCase) (Recommended)
+
+* While typing code in Lambda;
+    1. First, the codes provided by Java are used in the Method Reference if that is not enough;
+    2. Then put the method in the Utils Class and use it in the Method Reference,
+    (if we are going to use a method once, there is no need to put it in Utils. We type it with Lambda Expression),
+    if that is not enough;
+    3. Use Lambda Expression last.
+
+* Notes:
+    1)Sometimes the stream() method prevents us from accessing the methods we need (As removeIf() method), so we
+    do not use the stream() method.
+    2)But we may need to use the stream() method later. In this case, we can access the methods we want (As distinct()
+    method) by using the stream() method.
+    3) If we need the result as a list, we convert the result to a list with collect(Collectors.toList() method.
+
+* AnyMatch: According to the given condition, it navigates through the Stream and will return true if it matches any element.
+  AllMatch: According to the given condition, it navigates through the Stream and will return true if it matches all element.
+  NoneMatch: According to the given condition, it navigates through the Stream and will return true if it matches none of the elements.

@@ -1,0 +1,4 @@
+Learning Java is easy.
+Lambda is Functional Programming.
+If we learn to use Lambda, working with Collections, Arrays and Text Files becomes easier.
+We can do our work easily and quickly by using methods in Lambda.
